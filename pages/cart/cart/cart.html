@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./cart.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+   <title>Cart</title>
+</head>
+<body>
+      <header class='header'>
+         <div class='headerWrapper'>
+         <div class='usersInfo'>
+            <div class='logo'>
+               <img src='../../../img/header/headerAvatar.png' width='96' height='96' alt='Header avatar'/>
+            </div>
+            <div class='text'>
+               <h2>Добрый день, Илья!</h2>
+               <p>Ваш The GAME ID: hi@ilyaabramov.ru</p>
+            </div>
+         </div>
+         <div class='headerBtns'>
+            <button class='headerBtn1'>
+               <span class='btnLogo'><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M14.9211 10.9672H5.61641L6.08359 10.0156L13.8461 10.0016C14.1086 10.0016 14.3336 9.81406 14.3805 9.55469L15.4555 3.5375C15.4836 3.37969 15.4414 3.21719 15.3383 3.09375C15.2873 3.033 15.2237 2.98407 15.152 2.95034C15.0802 2.91661 15.002 2.8989 14.9227 2.89844L5.04766 2.86562L4.96328 2.46875C4.91016 2.21562 4.68203 2.03125 4.42266 2.03125H2.00859C1.86231 2.03125 1.72202 2.08936 1.61858 2.1928C1.51514 2.29624 1.45703 2.43653 1.45703 2.58281C1.45703 2.7291 1.51514 2.86939 1.61858 2.97283C1.72202 3.07626 1.86231 3.13438 2.00859 3.13438H3.97578L4.34453 4.8875L5.25234 9.28281L4.08359 11.1906C4.0229 11.2725 3.98634 11.3698 3.97806 11.4714C3.96977 11.573 3.99009 11.675 4.03672 11.7656C4.13047 11.9516 4.31953 12.0688 4.52891 12.0688H5.51016C5.30097 12.3466 5.18797 12.685 5.18828 13.0328C5.18828 13.9172 5.90703 14.6359 6.79141 14.6359C7.67578 14.6359 8.39453 13.9172 8.39453 13.0328C8.39453 12.6844 8.27891 12.3453 8.07266 12.0688H10.5898C10.3807 12.3466 10.2677 12.685 10.268 13.0328C10.268 13.9172 10.9867 14.6359 11.8711 14.6359C12.7555 14.6359 13.4742 13.9172 13.4742 13.0328C13.4742 12.6844 13.3586 12.3453 13.1523 12.0688H14.9227C15.2258 12.0688 15.4742 11.8219 15.4742 11.5172C15.4733 11.3711 15.4146 11.2312 15.311 11.1282C15.2074 11.0251 15.0672 10.9673 14.9211 10.9672ZM5.27734 3.95312L14.2742 3.98281L13.393 8.91719L6.32578 8.92969L5.27734 3.95312ZM6.79141 13.5266C6.51953 13.5266 6.29766 13.3047 6.29766 13.0328C6.29766 12.7609 6.51953 12.5391 6.79141 12.5391C7.06328 12.5391 7.28516 12.7609 7.28516 13.0328C7.28516 13.1638 7.23314 13.2894 7.14054 13.3819C7.04794 13.4745 6.92236 13.5266 6.79141 13.5266ZM11.8711 13.5266C11.5992 13.5266 11.3773 13.3047 11.3773 13.0328C11.3773 12.7609 11.5992 12.5391 11.8711 12.5391C12.143 12.5391 12.3648 12.7609 12.3648 13.0328C12.3648 13.1638 12.3128 13.2894 12.2202 13.3819C12.1276 13.4745 12.002 13.5266 11.8711 13.5266Z" fill="#262626"/>
+               </svg></span>
+               0 товаров на 0₽</button>
+            <button class='headerBtn2'>Выйти</button>
+         </div>
+      </div>
+      </header>
+      <div class='cart'>
+         <div class='title'>
+            <h1>Корзина</h1>
+         </div>
+         <div class='tableNames'>
+            <div class='tableNames__left'>
+            <div class='tableName tableName1'>
+               <p>Фото</p>
+            </div>
+            <div class='tableName tableName2'>
+               <p>Наименование</p>
+            </div>
+         </div>
+         <div class='tableNames__right'>
+            <div class='tableName'>
+               <p>Количество</p>
+            </div>
+            <div class='tableName'>
+               <p>Цена</p>
+            </div>
+            <div class='tableName'>
+               <p>Сумма</p>
+            </div>
+         </div>
+         </div>
+         <div class='cartItems'>
+            <div class='cartItem'>
+               <div class='cartItem__left'>
+               <div class='cartItem__logo'>
+                  <img src='../../../img/cart/items/1.png' width='180' heigt='114' alt='cartItem'/>
+               </div>
+               <div class='cartItem__name'>
+                  <p>Здравоохранение / Аптека<br>Артикул: 201-002</p>
+                  <span>Удалить</span>
+               </div>
+            </div>
+            <div class='cartItem__right'>
+               <div class='cartItem__amount'>
+                  <button class='amountBtn'>&minus;</button>
+                  <span>1 шт</span>
+                  <button class='amountBtn'>&plus;</button>
+               </div>
+               <div class='cartItem__price'>
+                  <span>20 000₽</span>
+               </div>
+               <div class='cartItem__sum'>
+                  <span>20 000₽</span>
+               </div>
+            </div>
+            </div>
+            <div class='cartItem'>
+               <div class='cartItem__left'>
+               <div class='cartItem__logo'>
+                  <img src='../../../img/cart/items/2.png' width='180' heigt='114' alt='cartItem'/>
+               </div>
+               <div class='cartItem__name'>
+                  <p>Здравоохранение / Фитнес-клуб<br>Артикул: 201-003</p>
+                  <span>Удалить</span>
+               </div>
+            </div>
+            <div class='cartItem__right'>
+               <div class='cartItem__amount'>
+                  <button class='amountBtn'>&minus;</button>
+                  <span>1 шт</span>
+                  <button class='amountBtn'>&plus;</button>
+               </div>
+               <div class='cartItem__price'>
+                  <span>20 000₽</span>
+               </div>
+               <div class='cartItem__sum'>
+                  <span>20 000₽</span>
+               </div>
+            </div>
+            </div>
+         </div>
+         <div class='total'>
+            <p>Итого <span>2 товара</span> на сумму <span>40 000₽</span></p>
+            <button>Продолжить</button>
+         </div>
+      </div>
+</body>
+</html>

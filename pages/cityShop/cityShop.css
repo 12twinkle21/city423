@@ -1,0 +1,440 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: 'Inter', sans-serif;
+}
+body{
+   background-color: #f0f2f5;
+}
+.headerWrapper{
+   max-width: 1392px;
+   padding: 0 83px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 240px;
+}
+.header{
+   height: 240px;
+   background-image: url(../../img/header/headerBg.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+.usersInfo{
+   display: flex;
+}
+.logo{
+   margin-right: 32px;
+   user-select: none;
+}
+.text{
+   margin-top: 5px;
+}
+.text h2{
+   font-size: 40px;
+   font-weight: 500;
+   color: #fff;
+}
+.text p{
+   font-size: 16px;
+   font-weight: 500;
+   color: #fff;
+   margin-top: 5px;
+}
+.headerBtns{
+   display: flex;
+}
+.headerBtn1{
+   width: fit-content;
+   padding: 0 17px;
+   height: 40px;
+   border-radius: 6px;
+   border: none;
+   background-color: #fff;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 400;
+   display: flex;
+   align-items: center;
+   margin-right: 15px;
+   user-select: none;
+}
+.headerBtn2{
+   width: fit-content;
+   padding: 0 36px;
+   height: 40px;
+   border-radius: 6px;
+   border: none;
+   background-color: #FF4D4F;
+   cursor: pointer;
+   font-size: 16px;
+   font-weight: 400;
+   color: #fff;
+   user-select: none;
+}
+.headerBtn1:active,.headerBtn2:active{
+   transform: translateY(2px);
+}
+.btnLogo{
+   margin-top: 4px;
+   margin-right: 6px;
+   display: block;
+}
+
+.content{
+   max-width: 1392px;
+   padding: 0 83px;
+   margin: 0 auto;
+   margin-top: 40px;
+   display: flex;
+   padding-bottom: 50px;
+}
+.menuNav{
+   width: 25%;
+   margin-right: 20px;
+}
+.menuNav__item{
+   display: flex;
+   padding-left: 20px;
+   align-items: center;
+   height: 60px;
+   cursor: pointer;
+}
+.activeMenuNavItem{
+   border-left: 2px solid #1890FF;
+   padding-left: 17px;
+}
+.activeMenuNavItem .menuNav__text a{
+   color:#1890FF
+}
+.activeMenuNavItem svg path{
+   fill: #1890FF;
+}
+.menuNav__text{
+   padding-bottom: 2px;
+}
+.menuNav__text a{
+   text-decoration: none;
+   color: #000;
+   margin-left: 12px;
+   font-size: 18px;
+   font-weight: 500;
+}
+.cityShop{
+   flex: 1;
+}
+.top__title h2{
+   font-size: 40px;
+   font-weight: 500;
+}
+.top__selectMenuItems{
+   display: flex;
+}
+.selectMenuItem{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: fit-content;
+   padding: 0 15px;
+   height: 30px;
+   background-color: #fff;
+   border-radius: 6px;
+   cursor: pointer;
+   margin-right: 15px;
+}
+.selectMenuItem:last-child{
+   margin-right: 0;
+}
+.selectMenuItem p{
+   font-size: 14px;
+   font-weight: 400;
+}
+.selectMenuItem span{
+   margin-bottom: 4px;
+   margin-left: 7px;
+}
+.titleOfShop{
+   margin-top: 30px;
+}
+.titleOfShop h2{
+   font-size: 40px;
+   font-weight: 500;
+}
+.cityShop__items{
+   display: flex;
+   margin-top: 40px;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.cityShop__item{
+   width: 49%;
+   margin-bottom: 40px;
+}
+.item__img{
+   width: 100%;
+   height: 274px;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center center;
+   display: inline-block;
+   border-radius: 12px;
+   position: relative;
+}
+.itemBright{
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: black;
+   opacity: 0.7;
+   z-index: 1;
+   border-radius: 12px;
+   display: none;
+}
+.item__img1{
+   background-image: url(../../img/cityShop/items/1.png);
+}
+.item__img2{
+   background-image: url(../../img/cityShop/items/2.png);
+}
+.item__img3{
+   background-image: url(../../img/cityShop/items/3.png);
+}
+.item__img4{
+   background-image: url(../../img/cityShop/items/4.png);
+}
+.item__img5{
+   background-image: url(../../img/cityShop/items/5.png);
+}
+.item__img6{
+   background-image: url(../../img/cityShop/items/6.png);
+}
+.item__img7{
+   background-image: url(../../img/cityShop/items/7.png);
+}
+.item__img8{
+   background-image: url(../../img/cityShop/items/8.png);
+}
+.item__img9{
+   background-image: url(../../img/cityShop/items/9.png);
+}
+.item__img10{
+   background-image: url(../../img/cityShop/items/10.png);
+}
+.item__img11{
+   background-image: url(../../img/cityShop/items/11.png);
+}
+.item__img12{
+   background-image: url(../../img/cityShop/items/12.png);
+}
+.item__text{
+   text-align: center;
+   padding: 0 30px;
+   height: 100%;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   visibility: hidden;
+   z-index: 100;
+   position: absolute;
+}
+.item__text p{
+   font-size: 12px;
+   font-weight: 400;
+   color: #fff;
+}
+.item__name{
+   margin-top: 15px;
+   text-align: center;
+}
+.item__name p{
+   font-size: 20px;
+   font-weight: 500;
+}
+.item__price{
+   display: flex;
+   justify-content: center;
+   margin-top: 15px;
+   align-items: center;
+}
+.item__price p{
+   font-size: 28px;
+   font-weight: 500;
+}
+.item__price button{
+   margin-left:15px;
+   font-size: 16px;
+   font-weight: 400;
+   border: none;
+   border-radius: 6px;
+   background-color: #1890FF;
+   color: #fff;
+   height: 40px;
+   padding: 0 45px;
+   cursor: pointer;
+}
+.item__price .disabledBtn{
+   border: 1px solid #D9D9D9;
+   background-color: #f5f5f5;
+   color: #8C8C8C;
+   cursor: default;
+   padding: 0 15px;
+}
+.item__price .disabledBtn:active{
+   transform: none;
+}
+.item__price button:active{
+   transform: translateY(2px);
+}
+
+
+@media(hover: hover) and (pointer: fine){
+   .headerBtn1:hover svg path{
+      fill: #fff;
+   }
+   .headerBtn1:hover{
+      color: #fff;
+      background-color:#1890FF;
+   }
+   .headerBtn2:hover{
+      background-color: #F08080;
+   }
+   .menuNav__item:hover .menuNav__text a{
+      color: #1890FF;
+   }
+   .menuNav__item:hover .menuNav__icon svg path{
+      fill: #1890FF;
+   }
+   .item__img:hover .item__text{
+      visibility: visible;
+   }
+   .item__img:hover .itemBright{
+      display: block;
+   }
+   .item__price button:hover{
+      background-color: #85b5ec;
+   }
+   .item__price .disabledBtn:hover{
+      background-color: #f5f5f5;
+   }
+}
+
+
+@media(max-width: 1100px){
+   .headerWrapper, .content{
+      padding: 0 50px;
+   }
+}
+
+@media(max-width: 1020px){
+   .content{
+      display: block;
+   }
+   .menuNav{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   }
+   .menuNav__item{
+      padding-left: 0;
+      margin-right: 20px;
+   }
+   .activeMenuNavItem{
+      border-left: none;
+      padding-left: 0;
+      border-bottom: 2px solid #1890FF;
+   }
+   .cityShop{
+      margin-top: 25px;
+   }
+}
+
+@media(max-width: 970px){
+   .headerBtns{
+      display: block;
+      text-align: end;
+   }
+   .headerBtn1{
+      margin-right: 0;
+      margin-bottom: 15px;
+   }
+}
+@media(max-width: 850px){
+   .header .text h2{
+      font-size: 30px;
+   }
+   .header .logo{
+      margin-right: 20px;
+   }
+   .usersInfo{
+      align-items: center;
+   }
+   .header .text{
+      margin-top: 0;
+      margin-bottom: 5px;
+   }
+}
+
+@media(max-width: 750px){
+   .headerWrapper, .content{
+      padding: 0 25px;
+   }
+   .cityShop__items{
+      display: block;
+   }
+   .cityShop__item{
+      width: 100%;
+   }
+}
+
+@media(max-width: 700px){
+   .headerWrapper{
+      flex-direction: column;
+      justify-content: center;
+   }
+   .headerBtns{
+      text-align: unset;
+      display: flex;
+      margin-top: 15px;
+   }
+   .headerBtn1{
+      margin-right: 15px;
+   }
+}
+
+@media(max-width: 500px){
+   .header .text h2{
+      font-size: 25px;
+   }
+   .headerBtn1, .headerBtn2, .menuNav__text a, .header .text p {
+      font-size: 14px;
+   }
+   .header .logo{
+      margin-right: 10px;
+   }
+   .headerWrapper, .content{
+      padding: 0 10px;
+   }
+}
+@media(max-width: 450px){
+   .top__title h2{
+      font-size: 24px;
+   }
+   .item__price p{
+      font-size: 22px;
+   }
+}
+@media(max-width: 400px){
+   .header .text{
+      text-align: center;
+   }
+   .headerBtn1, .headerBtn2{
+      padding: 0 15px;
+   }
+}
