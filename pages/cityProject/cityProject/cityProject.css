@@ -1,128 +1,4 @@
-*{
-   box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   font-family: 'Inter', sans-serif;
-}
-body{
-   background-color: #f0f2f5;
-}
-.headerWrapper{
-   max-width: 1392px;
-   padding: 0 83px;
-   margin: 0 auto;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   height: 240px;
-}
-.header{
-   height: 240px;
-   background-image: url(../../../img/header/headerBg.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
-}
-.usersInfo{
-   display: flex;
-}
-.logo{
-   margin-right: 32px;
-   user-select: none;
-}
-.text{
-   margin-top: 5px;
-}
-.text h2{
-   font-size: 40px;
-   font-weight: 500;
-   color: #fff;
-}
-.text p{
-   font-size: 16px;
-   font-weight: 500;
-   color: #fff;
-   margin-top: 5px;
-}
-.headerBtns{
-   display: flex;
-}
-.headerBtn1{
-   width: fit-content;
-   padding: 0 17px;
-   height: 40px;
-   border-radius: 6px;
-   border: none;
-   background-color: #fff;
-   cursor: pointer;
-   font-size: 16px;
-   font-weight: 400;
-   display: flex;
-   align-items: center;
-   margin-right: 15px;
-   user-select: none;
-}
-.headerBtn2{
-   width: fit-content;
-   padding: 0 36px;
-   height: 40px;
-   border-radius: 6px;
-   border: none;
-   background-color: #FF4D4F;
-   cursor: pointer;
-   font-size: 16px;
-   font-weight: 400;
-   color: #fff;
-   user-select: none;
-}
-.headerBtn1:active,.headerBtn2:active{
-   transform: translateY(2px);
-}
-.btnLogo{
-   margin-top: 4px;
-   margin-right: 6px;
-   display: block;
-}
 
-.content{
-   max-width: 1392px;
-   padding: 0 83px;
-   margin: 0 auto;
-   margin-top: 40px;
-   display: flex;
-   padding-bottom: 50px;
-}
-.menuNav{
-   width: 25%;
-   margin-right: 20px;
-}
-.menuNav__item{
-   display: flex;
-   padding-left: 20px;
-   align-items: center;
-   height: 60px;
-   cursor: pointer;
-}
-.activeMenuNavItem{
-   border-left: 2px solid #1890FF;
-   padding-left: 17px;
-}
-.activeMenuNavItem .menuNav__text a{
-   color:#1890FF
-}
-.activeMenuNavItem svg path{
-   fill: #1890FF;
-}
-.menuNav__text{
-   padding-bottom: 2px;
-}
-.menuNav__text a{
-   text-decoration: none;
-   color: #000;
-   margin-left: 12px;
-   font-size: 18px;
-   font-weight: 500;
-}
 .cityProject{
    flex: 1;
 }
@@ -315,22 +191,6 @@ body{
 }
 
 @media(hover: hover) and (pointer: fine){
-   .headerBtn1:hover svg path{
-      fill: #fff;
-   }
-   .headerBtn1:hover{
-      color: #fff;
-      background-color:#1890FF;
-   }
-   .headerBtn2:hover{
-      background-color: #F08080;
-   }
-   .menuNav__item:hover .menuNav__text a{
-      color: #1890FF;
-   }
-   .menuNav__item:hover .menuNav__icon svg path{
-      fill: #1890FF;
-   }
    .item__img:hover .item__text{
       visibility: visible;
    }
@@ -345,7 +205,6 @@ body{
    }
 }
 
-
 @media(max-width: 1250px){
    .top__selectMenuItems{
       display: block;
@@ -358,65 +217,14 @@ body{
       align-items: unset;
    }
 }
-@media(max-width: 1100px){
-   .headerWrapper, .content{
-      padding: 0 50px;
-   }
-}
 
 @media(max-width: 1020px){
-   .content{
-      display: block;
-   }
-   .menuNav{
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-   }
-   .menuNav__item{
-      padding-left: 0;
-      margin-right: 20px;
-   }
-   .activeMenuNavItem{
-      border-left: none;
-      padding-left: 0;
-      border-bottom: 2px solid #1890FF;
-   }
    .cityProject{
       margin-top: 25px;
    }
 }
 
-@media(max-width: 970px){
-   .headerBtns{
-      display: block;
-      text-align: end;
-   }
-   .headerBtn1{
-      margin-right: 0;
-      margin-bottom: 15px;
-   }
-}
-@media(max-width: 850px){
-   .header .text h2{
-      font-size: 30px;
-   }
-   .header .logo{
-      margin-right: 20px;
-   }
-   .usersInfo{
-      align-items: center;
-   }
-   .header .text{
-      margin-top: 0;
-      margin-bottom: 5px;
-   }
-}
-
 @media(max-width: 750px){
-   .headerWrapper, .content{
-      padding: 0 25px;
-   }
    .cityProject__items{
       display: block;
    }
@@ -426,34 +234,7 @@ body{
    }
 }
 
-@media(max-width: 700px){
-   .headerWrapper{
-      flex-direction: column;
-      justify-content: center;
-   }
-   .headerBtns{
-      text-align: unset;
-      display: flex;
-      margin-top: 15px;
-   }
-   .headerBtn1{
-      margin-right: 15px;
-   }
-}
-
 @media(max-width: 500px){
-   .header .text h2{
-      font-size: 25px;
-   }
-   .header .text p, .headerBtn1, .headerBtn2, .menuNav__text a{
-      font-size: 14px;
-   }
-   .header .logo{
-      margin-right: 10px;
-   }
-   .headerWrapper, .content{
-      padding: 0 10px;
-   }
    .cityProject__item{
       width: 100%;
       margin: 0;
@@ -477,13 +258,5 @@ body{
    }
    .selectMenuItem{
       margin-right: 10px;
-   }
-}
-@media(max-width: 400px){
-   .header .text{
-      text-align: center;
-   }
-   .headerBtn1, .headerBtn2{
-      padding: 0 15px;
    }
 }
