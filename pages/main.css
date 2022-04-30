@@ -3,6 +3,7 @@
    margin: 0;
    padding: 0;
    font-family: 'Inter', sans-serif;
+   color: #262626;
 }
 body{
    background-color: #f0f2f5;
@@ -11,10 +12,10 @@ body{
    max-width: 1392px;
    padding: 0 83px;
    margin: 0 auto;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
    height: 240px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .header{
    height: 240px;
@@ -22,6 +23,18 @@ body{
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
+}
+.headerTop{
+   display: none;
+}
+.headerLeft__btn, .headerRight__burger{
+   cursor: pointer;
+   user-select: none;
+}
+.headerBottom{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 .usersInfo{
    display: flex;
@@ -96,35 +109,47 @@ body{
    width: 25%;
    margin-right: 20px;
 }
-.menuNav__item{
+
+.menuNav__item, .navBurgerMenu__item{
    display: flex;
    padding-left: 20px;
    align-items: center;
    height: 60px;
    cursor: pointer;
 }
-.activeMenuNavItem{
+.activeMenuNavItem, .activeNavBurgerMenuItem{
    border-left: 2px solid #1890FF;
    padding-left: 17px;
 }
-.activeMenuNavItem .menuNav__text a{
+.activeMenuNavItem .menuNav__text a, .activeNavBurgerMenuItem .navBurgerMenu__text a{
    color:#1890FF
 }
-.activeMenuNavItem svg path{
+.activeMenuNavItem svg path, .activeNavBurgerMenuItem svg path{
    fill: #1890FF;
 }
-.menuNav__text{
+.menuNav__text, .navBurgerMenu__text{
    padding-bottom: 2px;
 }
-.menuNav__text a{
+.menuNav__text a, .navBurgerMenu__text a{
    text-decoration: none;
-   color: #000;
+   color: #262626;
    margin-left: 12px;
    font-size: 18px;
    font-weight: 500;
 }
-
-
+.burgerMenu{
+   background-color: #f0f2f5;
+   width: 100%;
+   height: 100vh;
+   position: fixed;
+   left: 0;
+   right: 0;
+   z-index: 100000;
+   display: none;
+}
+.closeBurgerMenu{
+   text-align: end;
+}
 
 @media(hover: hover) and (pointer: fine){
    .headerBtn1:hover svg path{
@@ -155,10 +180,14 @@ body{
    .content{
       display: block;
    }
+   .header, .headerWrapper{
+      height: 290px;
+   }
    .menuNav{
-      width: 100%;
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
+      margin-right: 0;
    }
    .menuNav__item{
       padding-left: 0;
@@ -166,7 +195,6 @@ body{
    }
    .activeMenuNavItem{
       border-left: none;
-      padding-left: 0;
       border-bottom: 2px solid #1890FF;
    }
 }
@@ -204,7 +232,7 @@ body{
    }
 }
 @media(max-width: 700px){
-   .headerWrapper{
+   .headerBottom{
       flex-direction: column;
       justify-content: center;
    }
@@ -216,13 +244,19 @@ body{
    .headerBtn1{
       margin-right: 15px;
    }
+   .usersInfo, .headerBtns{
+      justify-content: center;
+   }
 }
 
 @media(max-width: 500px){
    .header .text h2{
       font-size: 25px;
    }
-   .header .text p, .headerBtn1, .headerBtn2, .menuNav__text a{
+   .header .text p{
+      font-size: 12px;
+   }
+   .headerBtn1, .headerBtn2{
       font-size: 14px;
    }
    .header .logo{
@@ -231,13 +265,38 @@ body{
    .headerWrapper, .content{
       padding: 0 10px;
    }
+   
 }
-
+@media(max-width: 450px){
+   .headerTop{
+      display: flex;
+      margin-bottom: 40px;
+      align-items: center;
+      justify-content: space-between;
+   }
+   .headerTop__left{
+      display: flex;
+      align-items: center;
+   }
+   .headerLeft__btn{
+      margin-right: 8px;
+   }
+   .menuNav{
+      display: none;
+   }
+   .activeBurgerMenu{
+      display: block;
+   }
+}
 @media(max-width: 400px){
    .header .text{
       text-align: center;
    }
    .headerBtn1, .headerBtn2{
       padding: 0 15px;
+   }
+   .usersInfo .logo img{
+      width: 100%;
+      height: 100%;
    }
 }

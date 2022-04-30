@@ -61,6 +61,7 @@ body{
    font-size: 16px;
    font-weight: 400;
    margin-bottom: 20px;
+   line-height: 24px;
 }
 .aboutGame a{
    text-decoration: none;
@@ -117,7 +118,7 @@ body{
    width:164px;
    height: 56px;
    border: none;
-   color: #000;
+   color: #262626;
    background-color: #fff;
    border-radius: 8px;
    font-size: 16px;
@@ -177,6 +178,9 @@ body{
 @media(max-width: 950px){
    .aboutGame{
       width: 60%;
+   }
+   .aboutGame p{
+      line-height: 20px;
    }
 }
 
@@ -251,6 +255,9 @@ body{
    }
    .aboutGameInfo{
       padding: 15px 15px 0 15px;
+   }
+   .aboutGame p{
+      line-height: unset;
    }
 }
 

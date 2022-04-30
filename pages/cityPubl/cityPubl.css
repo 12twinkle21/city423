@@ -30,7 +30,9 @@
     justify-content: flex-end;
     height: 100%;
     text-align:end;
-    font-size: 28px;
+}
+.itemText p{
+   font-size: 28px;
     font-weight: 500;
     color: #fff;
 }

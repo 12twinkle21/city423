@@ -112,6 +112,7 @@
    visibility: hidden;
    z-index: 100;
    position: absolute;
+   line-height: 20px;
 }
 .item__text p{
    font-size: 12px;
