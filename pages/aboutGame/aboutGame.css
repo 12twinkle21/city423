@@ -218,6 +218,9 @@ body{
    .aboutGame p{
       margin-bottom: 10px;
    }
+   body, html{
+      overflow: hidden;
+   }
 }
 
 @media(max-width: 550px){
