@@ -127,7 +127,7 @@ html,body{
 .cityRating__notification::after{
    content: '';
    position: absolute;
-   background-image: url(../../../img/citySecrets/X.png);
+   background-image: url(../../../img/citySecrets/X.svg);
    background-repeat: no-repeat;
    background-position: center;
    width: 30px;

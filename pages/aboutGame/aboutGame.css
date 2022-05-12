@@ -10,7 +10,7 @@ body{
    background-size: cover;
    background-position: center;
    width: 100vw;
-   height: 100vh;
+   height: 100%;
 }
 .overlay{
    position: absolute;
@@ -18,7 +18,7 @@ body{
    left:0;
    z-index: 1000;
    width: 100vw;
-   height: 100vh;
+   height: 100%;
 }
 .overlayBtn{
    height:60px;
@@ -35,7 +35,7 @@ body{
 }
 .aboutGame{
    background-color: #fff;
-   height: 100vh;
+   height: 100%;
    width: 45%;
    margin-left: auto;
    display: flex;
